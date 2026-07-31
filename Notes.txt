@@ -1,0 +1,21 @@
+- Use factory functions.
+
+- todoItems (properties):
+	* title
+	* description
+	* dueDate
+	* priority
+	* notes
+
+- projects:
+	- Contain todoItems
+	- Need a default todoItems
+	- Create new projects
+	- Choose which project their todoItems fall under
+	
+- Functionality:
+	- View all projects
+	- View all todos in each project
+	- Expand a single todo to see/edit details
+	- Delete a todo
+	- Save list to local PC
