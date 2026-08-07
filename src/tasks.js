@@ -1,4 +1,4 @@
-/* export */ function createTask({
+export function createTask({
     title,
     description = "",
     dueDate = null,

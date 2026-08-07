@@ -4,22 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Odin Project, ToDo List</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- <script src="index.js" defer></script> -->
-    <script src="createDom.js" defer></script>
-    <script src="tasks.js" defer></script>
-    <script src="projects.js" defer></script>
-    
 </head>
 <body>
 
-    <div class="left-col"></div>
+    <div class="left-col">
 
-    <div class="top-row">Second Column - Row 1</div>
+    </div>
+
+    <div class="top-row">
+        <button id="open-project-modal-btn">+ Add Project</button>
+    </div>
 
     <div class="bottom-row">
         <div class="content"></div>
     </div>
         
+     <div id="project-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Create New Project</h2>
+            <form id="project-form">
+                <label for="new-project-title">Project Title:</label>
+                <input type="text" id="new-project-title" required autocomplete="off">
+                <div class="modal-actions">
+                    <button type="button" id="close-project-modal-btn">Cancel</button>
+                    <button type="submit">Create</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
 </body>
 </html>
